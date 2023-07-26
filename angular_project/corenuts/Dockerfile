@@ -17,7 +17,7 @@ FROM nginx:alpine
 WORKDIR /usr/share/nginx/html
 RUN rm -rf ./*
 
-COPY --from=builder /ang23/dist/hotel-management .
+COPY --from=builder /ang23/dist/corenuts .
 
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
 

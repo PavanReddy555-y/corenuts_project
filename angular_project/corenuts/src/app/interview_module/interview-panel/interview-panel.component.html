@@ -16,7 +16,7 @@
 
   <div>
     <button mat-raised-button (click)="openStudentDetails(student.studentId)">
-      More details
+      Student Details
     </button>
   </div>
 </div>
@@ -24,7 +24,7 @@
 <mat-card class="example-card">
   <div class="flex-box rating-points">
     <div>
-      <span style="font-weight: 600; font-size: larger">Ratings=></span>
+      <span style="font-weight: 600; font-size: larger">Ratings</span>
     </div>
     <div *ngFor="let interviewRatingPoint of getInterviewRatingPoints()">
       {{
